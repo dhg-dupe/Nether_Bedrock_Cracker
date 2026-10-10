@@ -1,4 +1,4 @@
-use std::sync::Arc;
+1use std::sync::Arc;
 use async_std::fs;
 use crate::tab::bedrock::block_entry::{Block, BlockMessage};
 use crate::tab::controls::{ApplicationTab, CrackerEvent, CrackerState, TabMessage};
@@ -61,7 +61,7 @@ impl ApplicationTab for BdrkTab {
 
     fn load_config(&mut self, file: String) {
         let mut blocks = vec![];
-        for line in file.lines().take(200) {
+        for line in file.lines() {
             let block = Block::from(line);
             blocks.push(block);
         }
