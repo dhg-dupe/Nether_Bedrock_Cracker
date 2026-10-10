@@ -1,4 +1,4 @@
-1use std::sync::Arc;
+use std::sync::Arc;
 use async_std::fs;
 use crate::tab::bedrock::block_entry::{Block, BlockMessage};
 use crate::tab::controls::{ApplicationTab, CrackerEvent, CrackerState, TabMessage};
